@@ -10,37 +10,31 @@ img {
     background-size: contain;
 }
 
-body {
-    font: 16px/1.4 'Roboto', sans-serif;
-    min-height: 100vh;
-    background: linear-gradient(
-            149deg,
-            rgb(243, 242, 243) 0%,
-            rgb(22, 3, 49) 100%
-    );
-    padding: 1rem;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-}
-
-
 .slider-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    font: 16px/1.4 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 110%;
+    padding: 1rem;
+    box-sizing: border-box;
+    user-select: none;
+    flex: 1 0 auto;
 }
 
 .slider {
     width: 100%;
     max-width: 1240px;
     height: 760px;
+    flex: 1 0 auto;
     text-align: center;
-    border-radius: 10px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -65,7 +59,8 @@ body {
     width: 100%;
     margin-right: 0;
     box-sizing: border-box;
-    background: white;
+    background: rgb(255, 255, 255, 0.4);
+    border-radius: 20px;
 }
 
 
@@ -124,6 +119,11 @@ body {
     text-align: center;
 }
 
+.slideText {
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
 .sliderNavLink {
     display: inline-block;
     height: 15px;
@@ -131,7 +131,6 @@ body {
     border-radius: 50%;
     background-color: #000331;
     margin: 0 10px 0 10px;
-
     transition: 0.2s all ease;
 }
 
