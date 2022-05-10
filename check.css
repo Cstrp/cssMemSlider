@@ -1,0 +1,26 @@
+.sliderNavLink:active {
+    animation: check 0.5s linear forwards;
+}
+
+
+@-webkit-keyframes check {
+    50% {
+        outline-color: rgb(255, 255, 255);
+        box-shadow: 0 0 0 3px rgb(0, 37, 243, 0.3), 0 0 0 16px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        outline-color: rgb(255, 255, 255);
+        box-shadow: 0 0 0 0 rgb(0, 37, 243), 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes check {
+    50% {
+        outline-color: rgb(255, 255, 255);
+        box-shadow: 0 0 0 3px rgb(0, 37, 243, 0.3), 0 0 0 16px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        outline-color: rgb(255, 255, 255);
+        box-shadow: 0 0 0 0 rgb(0, 37, 243), 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
