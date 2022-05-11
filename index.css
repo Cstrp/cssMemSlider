@@ -22,7 +22,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 110%;
+    background-size: cover;
     padding: 1rem;
     box-sizing: border-box;
     user-select: none;
@@ -59,7 +59,7 @@ img {
     width: 100%;
     margin-right: 0;
     box-sizing: border-box;
-    background: rgb(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 20px;
 }
 
