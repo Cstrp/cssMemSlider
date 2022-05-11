@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    background-position: center center;
+    background-size: contain;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font: 16px/1.4 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 1rem;
+    box-sizing: border-box;
+    user-select: none;
+    flex: 1 0 auto;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1240px;
+    height: 760px;
+    flex: 1 0 auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+
+#slideOne {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1.3rem;
+    gap: 25px;
+}
+
+#slideTwo {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 25px;
+}
+
+#slideThree {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 25px;
+}
+
+#slideFour {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 25px;
+}
+
+
+.slideImg {
+    display: flex;
+    height: 350px;
+    width: 100%;
+}
+
+.slideText {
+    text-align: justify;
+}
+
+.slide a {
+    background: none;
+    border: none;
+}
+
+
+.sliderNav {
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+}
+
+.slideText {
+    align-self: flex-start;
+    text-transform: uppercase;
+}
+
+.sliderNavLink {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #000331;
+    margin: 0 10px 0 10px;
+    transition: 0.2s all ease;
+}
+
+.sliderNavLink:hover {
+    background-color: white;
+    border: 1px solid black;
+}
